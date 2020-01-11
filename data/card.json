@@ -1,0 +1,12 @@
+{
+  "courses": [
+    {
+      "title": "Angular",
+      "price": "101",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png",
+      "id": "21920394-4eb6-4ec7-92a0-19ef0d01b67e",
+      "count": 1
+    }
+  ],
+  "price": 101
+}
