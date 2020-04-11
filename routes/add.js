@@ -11,14 +11,18 @@ router.get('/', (req, res) => {
 
 router.post('/', async (req, res) => {
   try {
-    const {body: {title, price, url}} = req;
-    const course = new Course(title, price, url);
+    const course = new Course({
+      title: req.body.title,
+      price: req.body.price,
+      url: req.body.url,
+      userId: req.user
+    });
 
-    await course.add();
+    await course.save();
 
     res.redirect('/courses');
   } catch (e) {
-    throw e;
+    console.log(e);
   }
 });
 

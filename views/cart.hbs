@@ -1,5 +1,5 @@
-<h1>Card</h1>
-<div id="card">
+<h1>cart</h1>
+<div id="cart">
     {{#if courses.length}}
         <table>
             <thead>
@@ -24,8 +24,11 @@
         <p>
             <strong>Price:</strong><span class="price">{{price}}</span>
         </p>
+        <form action="/orders" method="POST">
+            <button class="btn" type="submit">Order</button>
+        </form>
     {{else}}
-        <p>Card is empty</p>
+        <p>cart is empty</p>
     {{/if}}
 </div>
 
